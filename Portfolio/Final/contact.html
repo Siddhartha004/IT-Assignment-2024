@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic page metadata -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | Brew and Bloom</title>
+  
+  <!-- Link to external stylesheet -->
+  <link rel="stylesheet" href="css/contact.css" />
+</head>
+<body>
+
+  <!-- === NAVIGATION BAR === -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="Blog.html">Blog</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- === CONTACT FORM SECTION === -->
+  <section class="contact-form-section">
+    <h2>Inquire Form</h2>
+
+    <!-- Contact form begins -->
+    <form action="#" method="post" class="contact-form">
+      
+      <!-- Name Input -->
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <!-- Address Input -->
+      <label for="address">Address</label>
+      <input type="text" id="address" name="address" required>
+
+      <!-- Email Input -->
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <!-- Gender Selection -->
+      <label>Gender</label>
+      <div class="checkbox-group">
+        <label><input type="radio" name="gender" value="male"> Male</label>
+        <label><input type="radio" name="gender" value="female"> Female</label>
+      </div>
+
+      <!-- Internship Preference (Multiple checkboxes allowed) -->
+      <label>Intern</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="intern[]" value="baristas"> Baristas</label>
+        <label><input type="checkbox" name="intern[]" value="manager"> Cafe Manager</label>
+        <label><input type="checkbox" name="intern[]" value="cashiers"> Cashiers</label>
+        <label><input type="checkbox" name="intern[]" value="kitchen"> Kitchen Staff</label>
+      </div>
+
+      <!-- Country/Location Dropdown -->
+      <label for="country">Country</label>
+      <select id="country" name="country">
+        <option value="Nepal">Kathmandu</option>
+        <option value="Pokhara">Pokhara</option>
+        <option value="Lalitpur">Lalitpur</option>
+      </select>
+
+      <!-- Message Text Area -->
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+
+      <!-- Submit and Reset Buttons -->
+      <div class="form-buttons">
+        <input type="submit" value="Submit" onclick="submitAlert()">
+        <input type="reset" value="Reset" onclick="resetAlert()">
+      </div>
+    </form>
+  </section>
+
+  <!-- === FOOTER SECTION === -->
+  <footer>
+    <div class="footer-wrapper">
+
+      <!-- Top part of footer with contact and training info -->
+      <div class="footer-top">
+
+        <!-- Contact Info -->
+        <div class="footer-section">
+          <h4>Contact:</h4>
+          <p><strong>Head Office:</strong><br>Nursery Marg, Lazimpat, Kathmandu<br>+977-9846138421</p>
+
+          <!-- Social Media Icons -->
+          <div class="social-icons">
+            <a href="#"><img src="images/2023_Facebook_icon.svg.webp" alt="Facebook" /></a>
+            <a href="#"><img src="images/Instagram_logo_2016.svg.webp" alt="Instagram" /></a>
+          </div>
+        </div>
+
+        <!-- Training Programs -->
+        <div class="footer-section">
+          <h4>Training & Workshop</h4>
+          <p>Barista Training</p>
+          <p>Bakery Training</p>
+        </div>
+
+      </div>
+
+      <!-- Bottom part of footer with links and copyright -->
+      <div class="footer-bottom">
+        <div class="footer-links">
+          <a href="#">Terms and Conditions</a>
+          <a href="#">Privacy Policy</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <p>© Brew and Bloom.2025 | Powered by: Siddhartha Lama</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- === JAVASCRIPT ALERTS FOR FORM BUTTONS === -->
+  <script>
+    function submitAlert() {
+      alert("Form submitted successfully!");
+    }
+
+    function resetAlert() {
+      alert("Form reset successfully!");
+    }
+  </script>
+
+</body>
+</html>

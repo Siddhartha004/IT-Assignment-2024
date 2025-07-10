@@ -1,0 +1,280 @@
+/* === RESET & BASE STYLES === */
+/* Remove default margin/padding and set background */
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: white; /* Optional: ensures clean background behind elements */
+}
+
+/* === NAVIGATION BAR === */
+nav {
+  background-color: black;
+  padding: 10px 0;
+  position: sticky; /* Sticks navbar to top on scroll */
+  top: 0;
+  z-index: 1000; /* Ensures it appears above other content */
+  width: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Center nav items */
+  width: 100%;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 8px 12px;
+  transition: background 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: white;
+  color: #333;
+  border-radius: 5px;
+}
+
+/* === MAIN HERO SECTION === */
+.i-main {
+  background-image: url('images/coffee-5082544_1280.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Full viewport height */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.main-text h1 {
+  font-size: 3rem;
+  color: white;
+  font-weight: bold;
+  text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.7); /* For readability over background */
+}
+
+/* Utility class for dual-column text layout */
+.mission-text {
+  display: inline-block;
+  vertical-align: top;
+  width: 48%;
+  box-sizing: border-box;
+}
+
+/* Headings default */
+h1 {
+  font-size: 36px;
+  color: #333;
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* === ALTERNATE HERO/HEADER SECTION === */
+.hero {
+  background: url('images/coffee-563797_1280.jpg') no-repeat center center/cover;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.overlay-text h1 {
+  font-size: 3rem;
+  color: white;
+  font-weight: bold;
+  text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* === ABOUT TEXT SECTION === */
+.about-text {
+  padding: 40px 60px;
+  text-align: center;
+  max-width: 1000px;
+  margin: auto;
+  font-size: 25px;
+  color: #444;
+}
+
+/* === MISSION SECTION === */
+.mission-section {
+  background-color: #f5f5f5;
+  padding: 60px 20px;
+}
+
+.mission-container {
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+.mission-image,
+.mission-text {
+  display: inline-block;
+  vertical-align: top;
+  width: 48%;
+  box-sizing: border-box;
+}
+
+.mission-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.mission-text {
+  padding: 20px;
+  text-align: left;
+}
+
+.mission-text h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.mission-text p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* === UNIVERSAL SECTION STYLING (Menu, Testimonials, Gallery, CTA) === */
+.section {
+  padding: 50px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.menu-items, .testimonials, .gallery {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu-items div,
+.testimonials div,
+.gallery img {
+  background: #f4f4f4;
+  padding: 15px;
+  border-radius: 10px;
+  width: 280px;
+  text-align: center;
+}
+
+/* === CALL TO ACTION BUTTONS === */
+.cta-buttons {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.cta-buttons button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* === FOOTER SECTION === */
+footer {
+  background-color: #111;
+  color: #eee;
+  padding: 40px 20px 20px;
+  font-size: 14px;
+}
+
+.footer-wrapper {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-top {
+  text-align: center; /* Reserved space for future top content */
+}
+
+/* Footer columns */
+.footer-section {
+  display: inline-block;
+  vertical-align: top;
+  width: 23%;
+  margin: 0 1%;
+  text-align: left;
+}
+
+.footer-section h4 {
+  color: #fff;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+/* Social Media Icons */
+.social-icons img {
+  width: 24px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+/* App store / play store badge (if used) */
+.store-badge {
+  width: 140px;
+  margin: 10px 0;
+}
+
+/* Bottom Footer Bar */
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  border-top: 1px solid white;
+  padding-top: 20px;
+}
+
+.footer-links a {
+  color: #ccc;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.footer-bottom p {
+  color: #888;
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+/* === FORM HEADING STYLING === */
+.i-form h1 {
+  font-size: 40px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+/* === SERVICES SECTION BOX STYLE === */
+.services {
+  padding: 20px;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0); /* Consider adding real shadow if needed */
+}

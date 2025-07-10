@@ -1,0 +1,210 @@
+/* ===== Global Styles ===== */
+body {
+  font-family: Arial, sans-serif; /* Sets a clean and modern font */
+  background-color: #f8f8f8; /* Light background for the body */
+  margin: 0;
+  padding: 0;
+  color: black; /* Default text color */
+}
+
+/* ===== Navigation Bar ===== */
+nav {
+  background-color: black;
+  padding: 10px 0;
+  position: sticky; /* Keeps navbar fixed at the top when scrolling */
+  top: 0;
+}
+
+nav ul {
+  list-style-type: none; /* Removes default list bullet */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Aligns items horizontally */
+  justify-content: center; /* Centers nav items */
+  position: sticky;
+}
+
+nav ul li {
+  margin: 0 20px; /* Spacing between nav links */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 8px 12px;
+  transition: background 0.3s, color 0.3s; /* Smooth hover effects */
+}
+
+nav ul li a:hover {
+  background-color: white; /* Invert colors on hover */
+  color: #333;
+  border-radius: 5px;
+}
+
+/* ===== Header Section ===== */
+header {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 30px 10px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+header p {
+  margin: 10px 0 0;
+}
+
+/* ===== Blog Header Section ===== */
+.blog-header {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px 20px;
+}
+
+.blog-header h1 {
+  font-size: 36px;
+}
+
+.blog-header p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* ===== Blog Section ===== */
+.blog-section {
+  padding: 40px;
+}
+
+.blog-section h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Blog card grid layout - 2 cards per row */
+.blog-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+/* Individual blog card styling */
+.blog-card {
+  background-color: #fff;
+  width: calc(50% - 15px); /* Two cards per row with gap */
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  padding-bottom: 20px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.blog-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* Ensures image fills card neatly */
+}
+
+.blog-card h3 {
+  margin: 15px 0 10px;
+  font-size: 18px;
+}
+
+.blog-card p {
+  font-size: 14px;
+  margin: 0 15px 15px;
+}
+
+.blog-card button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.blog-card button:hover {
+  background-color: #333;
+}
+
+/* ===== Footer Section ===== */
+footer {
+  background-color: black;
+  color: #eee;
+  padding: 40px 20px 20px;
+  font-size: 14px;
+}
+
+.footer-wrapper {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-top {
+  text-align: center;
+}
+
+/* Footer information blocks */
+.footer-section {
+  display: inline-block;
+  vertical-align: top;
+  width: 23%;
+  margin: 0 1%;
+  text-align: left;
+}
+
+.footer-section h4 {
+  color: #fff;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.social-icons img {
+  width: 24px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.store-badge {
+  width: 140px;
+  margin: 10px 0;
+}
+
+/* Footer bottom section with links and copyright */
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  border-top: 1px solid white;
+  padding-top: 20px;
+}
+
+.footer-links a {
+  color: #ccc;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.footer-bottom p {
+  color: #888;
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+/* ===== Misc Section (possibly a form section title) ===== */
+.i-form h1 {
+  font-size: 40px;
+  color: black;
+  margin-bottom: 20px;
+}
+

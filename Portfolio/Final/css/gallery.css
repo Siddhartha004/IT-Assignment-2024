@@ -1,0 +1,158 @@
+/* ===== RESET AND BASE STYLES ===== */
+* {
+  box-sizing: border-box; /* Ensures padding/margin do not exceed element width */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fafafa; /* Light background for a clean feel */
+  color: #333; /* Dark text for readability */
+}
+
+/* ===== HEADER STYLING ===== */
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #222; /* Dark background for contrast */
+  color: white;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+/* ===== NAVIGATION BAR ===== */
+nav {
+  background-color: black;
+  padding: 10px 0;
+  position: sticky; /* Keeps nav bar fixed on scroll */
+  top: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Horizontal layout */
+  justify-content: center; /* Center menu items */
+  position: sticky;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 8px 12px;
+  transition: background 0.3s, color 0.3s; /* Smooth hover effect */
+}
+
+nav ul li a:hover {
+  background-color: white;
+  color: #333;
+  border-radius: 5px; /* Rounded background on hover */
+}
+
+/* ===== GALLERY GRID SECTION ===== */
+.gallery-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2-column grid layout */
+  gap: 20px; /* Space between items */
+}
+
+.gallery-item {
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Light shadow effect */
+  transition: transform 0.3s ease; /* Animation on hover */
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 250px;
+  display: block;
+  object-fit: cover; /* Ensures images cover the box proportionally */
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05); /* Zoom effect on hover */
+}
+
+/* ===== FOOTER SECTION ===== */
+footer {
+  background-color: black;
+  color: white;
+  padding: 40px 20px 20px;
+  font-size: 0.95rem;
+}
+
+.footer-wrapper {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Top section with contact/training/social links */
+.footer-top {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.footer-section h4 {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.footer-section p {
+  margin: 5px 0;
+}
+
+/* Social media icon styles */
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a img {
+  width: 24px;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a:hover img {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Bottom section with legal links */
+.footer-bottom {
+  border-top: 1px solid white;
+  padding-top: 15px;
+  text-align: center;
+}
+
+.footer-links {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #ccc;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+  color: #fff;
+}

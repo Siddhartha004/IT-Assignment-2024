@@ -1,0 +1,180 @@
+/* ====== BASE STYLES ====== */
+body {
+  font-family: Arial, sans-serif; /* Sets a clean sans-serif font */
+  background-color: #f9f9f9; /* Light background for the entire page */
+  color: #333; /* Dark text for contrast */
+  margin: 0;
+  padding: 0;
+}
+
+/* ====== NAVIGATION BAR STYLING ====== */
+nav {
+  background-color: black; /* Solid black navbar background */
+  padding: 10px 0;
+  position: sticky; /* Keeps navbar visible while scrolling */
+  top: 0;
+}
+
+nav ul {
+  list-style-type: none; /* Removes bullet points */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Aligns menu items horizontally */
+  justify-content: center; /* Centers menu items */
+  position: sticky;
+}
+
+nav ul li {
+  margin: 0 20px; /* Spacing between each menu item */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 8px 12px;
+  transition: background 0.3s, color 0.3s; /* Smooth hover transition */
+}
+
+nav ul li a:hover {
+  background-color: white; /* Hover effect: white background */
+  color: #333; /* Dark text on hover */
+  border-radius: 5px; /* Rounded corners on hover */
+}
+
+/* ====== CONTACT FORM SECTION ====== */
+.contact-form-section {
+  background-color: #e2e2e2; /* Light grey background for form section */
+  padding: 40px 20px;
+}
+
+.contact-form-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Main contact form box */
+.contact-form {
+  max-width: 600px;
+  background: #fff; /* White background for contrast */
+  padding: 25px;
+  border-radius: 10px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Subtle shadow */
+}
+
+.contact-form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+/* Input and textarea styling */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Grouping radio and checkbox options */
+.contact-form .checkbox-group {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 5px;
+}
+
+/* Submit and Reset button container */
+.contact-form .form-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+/* Button styles */
+.contact-form button {
+  padding: 10px 20px;
+  border: none;
+  background: #000;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #333; /* Slightly lighter on hover */
+}
+
+/* ====== FOOTER STYLING ====== */
+footer {
+  background-color: black;
+  color: white;
+  padding: 40px 20px 20px;
+  font-size: 0.95rem;
+}
+
+.footer-wrapper {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Top part of footer with contact & training info */
+.footer-top {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.footer-section h4 {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.footer-section p {
+  margin: 5px 0;
+}
+
+/* ====== SOCIAL ICONS ====== */
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a img {
+  width: 24px;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a:hover img {
+  transform: scale(1.1); /* Zoom on hover */
+}
+
+/* ====== FOOTER BOTTOM ====== */
+.footer-bottom {
+  border-top: 1px solid white;
+  padding-top: 15px;
+  text-align: center;
+}
+
+.footer-links {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #ccc;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+  color: #fff; /* Highlights on hover */
+}
